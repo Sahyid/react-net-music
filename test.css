@@ -1,0 +1,15 @@
+body{
+    margin:0px;
+    padding: 0px;
+    background-color: black;
+
+}
+#parent{
+    position: relative;
+    height: 600px;
+    width: 600px;
+    margin:auto;
+    top:100px;
+    position: relative;
+    border: 1px solid wheat;
+}

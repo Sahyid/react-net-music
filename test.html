@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./test.css"></link>
+</head>
+
+<body>
+    <div id="parent">
+        
+    </div>
+    <div style="width: 500px; height:400px;background-color: wheat; margin:0 auto">
+        <div style="background:rgb(45, 151, 238);display:inline-block;position:relative;width: auto;height: 300px; border:1px solid red;margin-left: -60px;">
+            <div style="display:inline-block;width:100px;height: 100px; background-color: rgb(31, 221, 56);margin-left:40px;"></div>
+            <div style="display:inline-block;width:100px;height: 100px; background-color: aliceblue;"></div>
+            <div style="display:inline-block;width:100px;height: 100px; background-color: rgb(238, 39, 39);"></div>
+            <div style="display:inline-block;width:100px;height: 100px; background-color: rgb(185, 238, 39);"></div>
+        </div>
+    </div> 
+    
+</body>
+<script type="text/javascript">
+    let box=document.querySelector("#parent");
+    let c=0
+    function count(){
+        console.log(c++);
+    }
+    function debounce(func, wait) {
+        let timeout;
+        return function() {
+            const context = this;
+            const args = [...arguments];
+            if (timeout) {console.log("timeout:",timeout);clearTimeout(timeout);}
+            const callNow = !timeout;
+            timeout = setTimeout(() => {
+                timeout = null;
+            }, wait)
+            if (callNow) func.apply(context, args)
+        }
+    }
+    box.onmouseover=debounce(count,2000);
+
+</script>
+</html>

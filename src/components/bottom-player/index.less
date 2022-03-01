@@ -1,0 +1,634 @@
+.bottom-player-wrapper {
+    height: 53px;
+    bottom: 0px;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.95);
+    width: 100%;
+    z-index: 100;
+}
+
+.bottom-player-parent {
+    width: 980px;
+    height: 47px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.bottom-player-button {
+    width: 137px;
+    height: 36px;
+    padding-top: 6px;
+    display: inline-block;
+
+    a:nth-child(1) {
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        background-position: 0 -130px;
+        margin: 5px 8px 0 0;
+
+        &:hover {
+            background-position: -30px -130px;
+        }
+    }
+
+    a:nth-child(2) {
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+
+        margin-right: 8px;
+
+    }
+
+    a:nth-child(3) {
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        background-position: -80px -130px;
+        margin: 5px 8px 0 0;
+
+        &:hover {
+            background-position: -110px -130px;
+        }
+    }
+}
+
+.bottom-player-button-playbutton {
+    background-position: 0 -204px;
+
+    &:hover {
+        background-position: -40px -204px;
+    }
+}
+
+.bottom-player-button-pausebutton {
+
+    background-position: 0 -165px;
+
+    &:hover {
+        background-position: -40px -165px;
+    }
+}
+
+.bottom-player-img {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+
+    img {
+        width: 34px;
+        height: 34px;
+        margin: 6px 15px 0 0;
+    }
+
+    a {
+
+        display: inline-block;
+        width: 34px;
+        height: 34px;
+        position: absolute;
+        left: 0;
+        top: 6px;
+    }
+}
+
+
+.bottom-player-process {
+    display: inline-block;
+    width: 581px;
+    height: 37px;
+    vertical-align: top;
+    font-size: 12px;
+}
+
+.bottom-player-process-word {
+    display: inline-block;
+    width: 581px;
+    height: 28px;
+
+    a:nth-child(1) {
+        height: 28px;
+        line-height: 28px;
+        display: inline-block;
+        color: #e8e8e8;
+        vertical-align: top;
+    }
+
+    span {
+        vertical-align: top;
+        max-width: 220px;
+        color: #9b9b9b;
+        height: 28px;
+        line-height: 28px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        word-wrap: normal;
+        margin-left: 15px;
+    }
+
+    a:nth-child(3) {
+        display: inline-block;
+        width: 14px;
+        height: 15px;
+        margin: 7px 0 0 13px;
+        background-position: -110px -103px;
+    }
+}
+
+.bottom-player-process-bar {
+    width: 466px;
+    height: 9px;
+    display: inline-block;
+}
+
+.ant-slider {
+    margin: 0;
+    position: relative;
+    height: 9px;
+    padding: 0;
+
+}
+
+.ant-slider:hover .ant-slider-rail {
+    background-color: #333;
+}
+
+.ant-slider-rail {
+    height: 9px;
+    width: 466px;
+    background: url(../../assets/img/progress_bar.png) right 0;
+
+    &:hover {
+        background-color: red;
+    }
+}
+
+.ant-slider-track {
+    background: url(../../assets/img/progress_bar.png) left -66px;
+    height: 9px;
+}
+
+.ant-slider-handle {
+    background: url(../../assets/img/sprite_icon.png) 0 -250px;
+    border: none;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: -8px;
+
+}
+
+.bottom-player-process-bar-number {
+    color: #797979;
+    font-size: 12px;
+    text-shadow: 0 1px 0 #121212;
+    margin-left: 10px;
+}
+
+.bottom-player-function-icon {
+    display: inline-block;
+    vertical-align: top;
+
+    a {
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+        margin: 11px 2px 0 0;
+    }
+
+    a:nth-child(1) {}
+
+    a:nth-child(2) {
+        background-position: -88px -163px;
+    }
+
+    a:nth-child(3) {
+        background-position: -114px -163px;
+    }
+}
+
+.bottom-player-right-icon {
+    vertical-align: top;
+    display: inline-block;
+    padding-left: 13px;
+    position: relative;
+    z-index: 10;
+    width: 113 px;
+    padding-left: 13 px;
+    background-position: -147px -238px;
+
+}
+
+.bottom-player-right-icon .loopPlay {
+    background-position: -3px -344px;
+
+    &:hover {
+        background-position: -33px -344px;
+    }
+}
+
+.bottom-player-right-icon .randomPlay {
+    background-position: -66px -248px;
+
+    &:hover {
+        background-position: -93px -248px;
+    }
+}
+
+.bottom-player-right-icon .singlePlay {
+    background-position: -66px -344px;
+
+    &:hover {
+        background-position: -93px -344px;
+    }
+}
+
+.bottom-player-right-icon-volumn {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 11px 2px 0 0;
+    background-position: -2px -248px;
+}
+
+
+.bottom-player-right-icon-loop {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 11px 2px 0 0;
+    background-position: -3px -344px;
+}
+
+.bottom-player-right-icon-list {
+    background-position: -42px -68px;
+    display: inline-block;
+
+    a {
+        display: inline-block;
+        width: 59px;
+        height: 25px;
+        padding-left: 21px;
+        background-position: -42px -68px;
+        margin: 11px 2px 0 0;
+
+        span {
+            line-height: 25px;
+            width: 38px;
+            display: inline-block;
+            text-align: center;
+        }
+    }
+}
+
+.lyric-class {
+    width: 100%;
+    position: fixed;
+    bottom: 56px;
+}
+
+.bottom-player-playlist {
+    width: 986px;
+    height: 301px;
+    background-color: #333;
+    top: -300px;
+    position: absolute;
+}
+
+.bottom-player-playlist-header {
+    width: 976px;
+    height: 40px;
+    margin: 0 auto;
+    h4 {
+        position: absolute;
+        left: 25px;
+        top: 0;
+        color: #e2e2e2;
+        font-size: 16px;
+        font-weight: bold;
+        display: inline-block;
+        height: 39px;
+        line-height: 39px;
+    }
+
+    p {
+        position: absolute;
+        left: 595px;
+        top: 0;
+        width: 346px;
+        text-align: center;
+        height: 39px;
+        line-height: 39px;
+        color: #fff;
+        font-size: 14px;
+    }
+}
+
+.bottom-player-list-close {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    text-indent: -996px; //把关闭的文字隐藏
+    cursor: pointer;
+    background-position: -195px 9px;
+}
+
+
+.bottom-player-playlist-clear {
+    span {
+        float: left;
+        margin: 1px 6px 0 0;
+        background-position: -51px 0;
+        width: 13px;
+        height: 16px;
+    }
+    position: absolute;
+    left: 490px;
+    top: 12px;
+    height: 15px;
+    line-height: 15px;
+    cursor: pointer;
+    color: #ccc;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.bottom-player-playlist-collection {
+    span {
+        float: left;
+        margin: 1px 6px 0 0;
+        width: 16px;
+        height: 16px;
+        background-position: -24px 0;
+    }
+    position: absolute;
+    left: 398px;
+    top: 12px;
+    height: 15px;
+    line-height: 15px;
+    cursor: pointer;
+    color: #ccc;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.bottom-player-playlist-main {
+    width: 986px;
+    height: 260px;
+    position: relative;
+}
+
+.bottom-player-playlist-main-left {
+
+    width: 559px;
+    height: 260px;
+    overflow-y: auto;
+    &::-webkit-scrollbar{
+        width: 6px;
+    }
+    &::-webkit-scrollbar-thumb {
+        //滑块
+        /*垂直滚动条的样式*/
+        background-color: rgb(77, 74, 74);
+        height: 200px;
+    }
+
+    &::-webkit-scrollbar-track-piece {
+        //内轨道的设置
+        background-color: #7a7878;
+        /*滚动条的背景颜色*/
+    }
+    ul {
+        width: 100%;
+        position: relative;
+    }
+
+}
+
+.bottom-player-playlist-main-left-li {
+    height: 28px;
+    width: 553px;
+    color: #ccc;
+    font-size: 12px;
+    
+
+    .bottom-player-playlist-main-left-play {
+        display: inline-block;
+        width: 20px;
+        height: 28px;
+    }
+
+    .bottom-player-playlist-main-left-name{
+        display: inline-block;
+        padding-left: 10px;
+        width: 266px;
+        height: 28px;
+        line-height: 28px;
+        vertical-align: top;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        word-wrap: normal;
+    }
+
+    .bottom-player-playlist-main-left-icon {
+        display: inline-block;
+        width: 88px;
+        height: 28px;
+        padding-left: 10px;
+        vertical-align: top;
+        position: relative;
+
+        .bottom-player-playlist-main-left-icon-i {
+            display: none;
+            position: absolute;
+            width: 100px;
+            height: 28px;
+            left: -10px;
+
+            i {
+                display: inline-block;
+            }
+
+            i:nth-child(1) {
+                width: 16px;
+                height: 16px;
+                margin: 7px 0 0 10px;
+                background-position: -24px 0;
+
+                &:hover {
+                    background-position: -24px -20px;
+                }
+            }
+
+            i:nth-child(2) {
+                width: 14px;
+                height: 16px;
+                margin: 7px 0 0 10px;
+                background-position: 0 0;
+
+                &:hover {
+                    background-position: 0 -20px;
+                }
+            }
+
+            i:nth-child(3) {
+                width: 14px;
+                height: 16px;
+                margin: 7px 0 0 10px;
+                background-position: -57px -50px;
+
+                &:hover {
+                    background-position: -80px -50px;
+                }
+            }
+
+            i:nth-child(4) {
+                width: 13px;
+                height: 16px;
+                margin: 7px 0 0 10px;
+                background-position: -51px 0;
+
+                &:hover {
+                    background-position: -51px -20px;
+                }
+            }
+        }
+    }
+
+    .bottom-player-playlist-main-left-singer {
+        width: 80px;
+        height: 28px;
+        padding-left: 10px;
+        line-height: 28px;
+        display: inline-block;
+        vertical-align: top;
+        color: #9b9b9b;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        word-wrap: normal;
+    }
+
+    .bottom-player-playlist-main-left-time {
+        width: 45px;
+        height: 28px;
+        padding-left: 10px;
+        display: inline-block;
+        vertical-align: top;
+        line-height: 28px;
+        color: #9b9b9b;
+    }
+
+    .bottom-player-playlist-main-left-source {
+        width: 43px;
+        height: 28px;
+        display: inline-block;
+
+        a {
+            float: right;
+            width: 14px;
+            height: 16px;
+            margin-top: 7px;
+            background-position: -80px 0px;
+        }
+    }
+}
+
+.bottom-player-playlist-main-left-li:hover {
+    color: #fff;
+}
+
+.bottom-player-playlist-main-left-li:hover .bottom-player-playlist-main-left-icon-i {
+    display: inline-block;
+}
+
+.bottom-player-playlist-main-mask2 {
+    position: absolute;
+    left: 560px;
+    top: 0;
+    z-index: 3;
+    width: 426px;
+    height: 260px;
+    overflow-y: auto;
+    background: #121212;
+
+    //定义滚动条
+    &::-webkit-scrollbar {
+        //整个滚动条
+        width: 6px;
+        border-radius: 4px;
+
+    }
+
+    &::-webkit-scrollbar-thumb {
+        //滑块
+        /*垂直滚动条的样式*/
+        border-radius: 10px;
+        background-color: rgb(235, 46, 46);
+        height: 50px;
+    }
+
+    &::-webkit-scrollbar-track-piece {
+        //内轨道的设置
+        background-color: #1a1a1a;
+        /*滚动条的背景颜色*/
+    }
+
+}
+
+.bottom-player-playlist-main-right {
+    position: absolute;
+    right: 40px;
+    top: 0;
+    z-index: 4;
+    margin: 21px 0 20px 0;
+    width: 354px;
+    height: 219px;
+
+
+}
+
+.bottom-player-playlist-main-right-p {
+    color: #989898;
+    word-wrap: break-word;
+    text-align: center;
+    line-height: 32px;
+    height: auto !important;
+    height: 32px;
+    min-height: 32px;
+    -webkit-transition: color 0.7s linear;
+    -moz-transition: color 0.7s linear;
+    -o-transition: color 0.7s linear;
+    transition: color 0.7s linear;
+    font-size: 12px;
+}
+
+.bottom-player-playlist-main-right-active {
+    color: #fff;
+    font-size: 14px;
+    word-wrap: break-word;
+    text-align: center;
+    line-height: 32px;
+    height: auto !important;
+    height: 32px;
+    min-height: 32px;
+    -webkit-transition: color 0.7s linear;
+    -moz-transition: color 0.7s linear;
+    -o-transition: color 0.7s linear;
+    transition: color 0.7s linear;
+}
+
+.activeLi {
+    .bottom-player-playlist-main-left-play {
+        background: url(../../assets/img/playlist.png);
+        background-position: -174px 8px;
+    }
+}
